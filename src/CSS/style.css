@@ -1,2 +1,44 @@
-#Sun {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+/* Setup CSS */
+html {
+  font-size: 100%;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  text-decoration: none;
+  list-style: none;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  border: 5px solid goldenrod;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Specific CSS */
+
+svg {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: -9999;
+}
+
+@media (min-width: 954px) {
+  svg {
+    display: block;
+  }
 }
