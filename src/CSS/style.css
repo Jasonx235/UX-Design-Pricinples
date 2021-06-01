@@ -20,14 +20,21 @@ html {
   padding: 0;
 }
 
+/* Specific CSS */
+
+/* This background image svg will not have animations */
+
 body {
-  border: 5px solid goldenrod;
   height: 100%;
   width: 100%;
   font-family: "Poppins", sans-serif;
+  background-image: url(../images/illustration.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-/* Specific CSS */
+/* Setting SVG to background */
 
 svg {
   position: absolute;
