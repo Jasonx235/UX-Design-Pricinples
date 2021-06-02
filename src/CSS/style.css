@@ -34,8 +34,18 @@ body {
   background-position: center;
 }
 
-/* Setting SVG to background */
+/* <Header/> Styles */
+h1 {
+  font-size: clamp(32px, 10vw, 96px);
+  font-weight: bold;
+}
 
+.name {
+  font-size: clamp(12px, 5vw, 24px);
+  font-weight: bold;
+}
+
+/* Setting SVG to background */
 svg {
   position: absolute;
   display: none;

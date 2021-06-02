@@ -1,15 +1,18 @@
 import React from "react";
 import { ReactComponent as Background } from "./images/illustration.svg";
+import Header from "./components/Header";
 
-import "./CSS/style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./CSS/style.css";
 
 function App() {
   return (
-    <div>
+    <>
       <Background />
-      <h1>hi</h1>
-    </div>
+      <div className='container'>
+        <Header />
+      </div>
+    </>
   );
 }
 
