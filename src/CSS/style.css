@@ -61,14 +61,17 @@ h1 {
 
 .menu-container {
   border: 5px solid goldenrod;
+  background-color: rgba(255, 255, 255, 90%);
+  margin-bottom: 10px;
 }
 
 .information-container {
   border: 5px solid blue;
+  background-color: rgba(255, 255, 255, 90%);
 }
 
 .module-container {
-  border: 5px solid white;
+  border: 5px solid green;
 }
 /* Setting SVG to background */
 svg {
