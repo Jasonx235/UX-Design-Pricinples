@@ -61,4 +61,8 @@ svg {
   svg {
     display: block;
   }
+
+  #Sun {
+    visibility: hidden;
+  }
 }
