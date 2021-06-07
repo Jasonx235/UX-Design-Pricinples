@@ -48,6 +48,28 @@ h1 {
   margin-left: 10px;
 }
 
+.header-container {
+  border: 5px solid goldenrod;
+  margin-bottom: clamp(250px, 40%, 700px);
+}
+
+/*  <Content/> Styles */
+
+.content-container {
+  border: 5px solid red;
+}
+
+.menu-container {
+  border: 5px solid goldenrod;
+}
+
+.information-container {
+  border: 5px solid blue;
+}
+
+.module-container {
+  border: 5px solid white;
+}
 /* Setting SVG to background */
 svg {
   position: absolute;
