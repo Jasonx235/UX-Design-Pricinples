@@ -1,27 +1,8 @@
 import React, { useState } from "react";
+import menuItems from "../Data";
 
 function Content() {
   const [selected, setSelected] = useState("Affordance");
-  const menuItems = [
-    {
-      label: "Affordance",
-      action: () => {
-        setSelected("Affordance");
-      },
-    },
-    {
-      label: "Mapping",
-      action: () => {
-        setSelected("Mapping");
-      },
-    },
-    {
-      label: "Consistency",
-      action: () => {
-        setSelected("Consistency");
-      },
-    },
-  ];
 
   return (
     <div className='content-container'>
@@ -29,7 +10,7 @@ function Content() {
         <div className='d-lg-none'>
           <select onChange={(e) => setSelected(e.target.value)}>
             {menuItems.map((option) => (
-              <option value={option.value}>{option.label}</option>
+              <option value={option.label}>{option.label}</option>
             ))}
           </select>
         </div>
@@ -39,7 +20,7 @@ function Content() {
               return (
                 <li
                   onClick={() => {
-                    option.action();
+                    setSelected(option.label);
                   }}
                 >
                   {option.label}
@@ -49,14 +30,16 @@ function Content() {
           </ul>
         </div>
       </div>
-      <div className='information-container'>
-        <p>{selected}</p>
-        <div className='module-container'>
-          <div> without</div>
-          <div>with</div>
+      <div className=' d-flex justify-content-center align-items-center h-100 w-100'>
+        <div className='information-container '>
+          <p>{selected}</p>
+          <div className='module-container d-flex justify-content-around flex-wrap'>
+            <div className='without'> without</div>
+            <div className='with'>with</div>
+          </div>
+          <p>description</p>
+          <p>Link</p>
         </div>
-        <p>description</p>
-        <p>Link</p>
       </div>
     </div>
   );
