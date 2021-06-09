@@ -1,12 +1,24 @@
 const menuItems = [
   {
-    label: "Affordance",
+    name: "About",
   },
   {
-    label: "Mapping",
+    name: "Affordance",
   },
   {
-    label: "Consistency",
+    name: "Consistency",
+  },
+  {
+    name: "Constraint",
+  },
+  {
+    name: "Feedback",
+  },
+  {
+    name: "Mapping",
+  },
+  {
+    name: "Visibility",
   },
 ];
 
