@@ -1,16 +1,24 @@
 import React, { useState } from "react";
 import menuItems from "../Data";
+import Information from "./Information";
 
 function Content() {
-  const [selected, setSelected] = useState("Affordance");
+  const [selected, setSelected] = useState("About");
+  const [selectedID, setSelectedID] = useState(0);
 
   return (
     <div className='content-container'>
       <div className='menu-container'>
         <div className='d-lg-none'>
-          <select onChange={(e) => setSelected(e.target.value)}>
+          <select
+            onChange={(e) => {
+              let info = JSON.parse(e.target.value);
+              setSelected(info.name);
+              setSelectedID(info.id);
+            }}
+          >
             {menuItems.map((option) => (
-              <option value={option.name}>{option.name}</option>
+              <option value={JSON.stringify(option)}>{option.name}</option>
             ))}
           </select>
         </div>
@@ -21,6 +29,7 @@ function Content() {
                 <li
                   onClick={() => {
                     setSelected(option.name);
+                    setSelectedID(option.id);
                   }}
                   className='menu'
                 >
@@ -31,15 +40,7 @@ function Content() {
           </ul>
         </div>
       </div>
-      <div className='information-container '>
-        <p>{selected}</p>
-        <div className='module-container d-flex justify-content-around flex-wrap'>
-          <div className='without'> without</div>
-          <div className='with'>with</div>
-        </div>
-        <p>description</p>
-        <p>Link</p>
-      </div>
+      <Information selected={selected} selectedID={selectedID} />
     </div>
   );
 }
