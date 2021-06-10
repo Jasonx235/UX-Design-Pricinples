@@ -6,14 +6,14 @@ function Information({ selected, selectedID }) {
 
   useEffect(() => {
     setData(menuItems[selectedID]);
-  }, [selected, selectedID]);
+  }, [selectedID]);
 
   if (selected === "About") {
     return (
       <div className='d-flex justify-content-center align-items-center flex-column h-100 w-100'>
         <div className='information-container '>
           <p>
-            {selected} {selectedID}
+            {data.name} {data.id}
           </p>
           <p>description</p>
           <p>Link</p>
@@ -26,7 +26,7 @@ function Information({ selected, selectedID }) {
     <div className='d-flex justify-content-center align-items-center flex-column h-100 w-100'>
       <div className='information-container '>
         <p>
-          {selected} {selectedID}
+          {data.name} {data.id}
         </p>
         <div className='module-container d-flex justify-content-around flex-wrap'>
           <div className='without'> without</div>

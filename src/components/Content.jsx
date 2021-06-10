@@ -18,7 +18,9 @@ function Content() {
             }}
           >
             {menuItems.map((option) => (
-              <option value={JSON.stringify(option)}>{option.name}</option>
+              <option value={JSON.stringify(option)} key={option.id}>
+                {option.name}
+              </option>
             ))}
           </select>
         </div>
@@ -31,6 +33,7 @@ function Content() {
                     setSelected(option.name);
                     setSelectedID(option.id);
                   }}
+                  key={option.id}
                   className='menu'
                 >
                   {option.name}
