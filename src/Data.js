@@ -8,7 +8,7 @@ const menuItems = [
       "UX design principles are the building blocks to intuitive interactions between the user and the product/service. Don Norman, the pioneer of modern UX design philosophies, formulated six design principles in his book The Design of Everyday Things. These design principles are incorporated into our daily lives from the doors we use to enter rooms to the apps on our smartphones. This website was designed to demonstrate the six principles of design using simple and interactive modules so that anyone can learn how each principle influences the design process.",
     links: [
       "https://uxdesign.cc/general-principles-of-design-don-normans-principles-4e2d97267905",
-      "https://uxdesign.cc/general-principles-of-design-don-normans-principles-4e2d97267905",
+      "https://medium.com/@sachinrekhi/don-normans-principles-of-interaction-design-51025a2c0f33",
     ],
   },
   {

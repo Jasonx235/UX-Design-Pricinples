@@ -16,7 +16,19 @@ function Information({ selected, selectedID }) {
             {data.name} {data.id}
           </p>
           <p>description</p>
-          <p>Link</p>
+          <p>{data.description}</p>
+          <p>Learn More</p>
+          <ul>
+            {data.links &&
+              data.links.map((link) => {
+                return;
+                <li>
+                  <a href={link} target='_blank' rel='noopener noreferrer'>
+                    {link}
+                  </a>
+                </li>;
+              })}
+          </ul>
         </div>
       </div>
     );
@@ -33,7 +45,20 @@ function Information({ selected, selectedID }) {
           <div className='with'>with</div>
         </div>
         <p>description</p>
+        <p>{data.description}</p>
         <p>Link</p>
+        <ul>
+          {data.links &&
+            data.links.map((link) => {
+              return (
+                <li>
+                  <a href={link} target='_blank' rel='noopener noreferrer'>
+                    {link}
+                  </a>
+                </li>
+              );
+            })}
+        </ul>
       </div>
     </div>
   );
