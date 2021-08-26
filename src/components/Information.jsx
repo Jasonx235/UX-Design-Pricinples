@@ -21,12 +21,13 @@ function Information({ selected, selectedID }) {
           <ul>
             {data.links &&
               data.links.map((link) => {
-                return;
-                <li>
-                  <a href={link} target='_blank' rel='noopener noreferrer'>
-                    {link}
-                  </a>
-                </li>;
+                return (
+                  <li>
+                    <a href={link} target='_blank' rel='noopener noreferrer'>
+                      {link}
+                    </a>
+                  </li>
+                );
               })}
           </ul>
         </div>
