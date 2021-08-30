@@ -42,8 +42,8 @@ function Information({ selected, selectedID }) {
           {data.name} {data.id}
         </p>
         <div className='module-container d-flex justify-content-around flex-wrap'>
-          <div className='without'> without</div>
-          <div className='with'>with</div>
+          {data.moduleWith}
+          {data.moduleWithOut}
         </div>
         <p>description</p>
         <p>{data.description}</p>

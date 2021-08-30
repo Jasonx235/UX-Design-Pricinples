@@ -92,17 +92,7 @@ overflow-wrap: break-word;
   display: inline-block;
 }
 
-.without {
-  width: 350px;
-  height: 255px;
-  background-color: aqua;
-}
 
-.with {
-  width: 350px;
-  height: 255px;
-  background-color: orange;
-}
 
 /* Setting SVG to background */
 svg {
@@ -115,9 +105,10 @@ svg {
 
 /* Module Styles */
 .module{
-  background-color: bisque;
+  background-color: green;
   height: 275px;
   width: 350px;
+  border-radius: 5px;
 }
 
 
