@@ -113,6 +113,14 @@ svg {
   z-index: -9999;
 }
 
+/* Module Styles */
+.module{
+  background-color: bisque;
+  height: 275px;
+  width: 350px;
+}
+
+
 @media (min-width: 954px) {
   svg {
     display: block;
