@@ -54,7 +54,7 @@ h1 {
   margin-bottom: clamp(250px, 40%, 700px);
 }
 
-/*  <Content/> Styles */
+/*  <Menu/> Styles */
 
 .content-container {
   border: 5px solid red;
@@ -79,7 +79,7 @@ h1 {
 .information-container {
   border: 5px solid blue;
   background-color: rgba(255, 255, 255, 90%);
-overflow-wrap: break-word;
+  overflow-wrap: break-word;
   width: 100%;
   max-width: 855px;
 }
@@ -92,8 +92,6 @@ overflow-wrap: break-word;
   display: inline-block;
 }
 
-
-
 /* Setting SVG to background */
 svg {
   position: absolute;
@@ -104,13 +102,12 @@ svg {
 }
 
 /* Module Styles */
-.module{
+.module {
   background-color: green;
   height: 275px;
   width: 350px;
   border-radius: 5px;
 }
-
 
 @media (min-width: 954px) {
   svg {

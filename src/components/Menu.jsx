@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import menuItems from "../Data";
 import Information from "./Information";
 
-function Content() {
+function Menu() {
   const [selected, setSelected] = useState("About");
   const [selectedID, setSelectedID] = useState(0);
 
@@ -48,4 +48,4 @@ function Content() {
   );
 }
 
-export default Content;
+export default Menu;
