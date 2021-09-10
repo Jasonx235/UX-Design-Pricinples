@@ -103,10 +103,17 @@ svg {
 
 /* Module Styles */
 .module {
-  background-color: green;
   height: 275px;
   width: 350px;
   border-radius: 5px;
+}
+
+.yes{
+  background-color: green;
+}
+
+.no{
+  background-color: red;
 }
 
 @media (min-width: 954px) {

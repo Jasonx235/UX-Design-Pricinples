@@ -1,17 +1,11 @@
 // Yes you can store components inside objects
 
 import Affordance from "./components/modules/Affordance";
-import AffordanceNo from "./components/modules/AffordanceNo";
 import Consistency from "./components/modules/Consistency";
-import ConsistencyNo from "./components/modules/ConsistencyNo";
 import Constraint from "./components/modules/Constraint";
-import ConstraintNo from "./components/modules/ConstraintNo";
 import Feedback from "./components/modules/Feedback";
-import FeedbackNo from "./components/modules/FeedbackNo";
 import Mapping from "./components/modules/Mapping";
-import MappingNo from "./components/modules/MappingNo";
 import Visibility from "./components/modules/Visibility";
-import VisibilityNo from "./components/modules/VisibilityNo";
 
 const menuItems = [
   {
@@ -37,8 +31,8 @@ const menuItems = [
       "https://www.interaction-design.org/literature/topics/affordances#:~:text=Affordances%20are%20properties%20of%20objects,to%20be%20turned%20or%20pushed",
       "https://uxdesign.cc/affordance-in-user-interface-design-3b4b0b361143",
     ],
-    moduleWith: <Affordance />,
-    moduleWithOut: <AffordanceNo />,
+    moduleWith: <Affordance status={true} />,
+    moduleWithOut: <Affordance status={false} />,
   },
   {
     id: 2,
@@ -53,8 +47,8 @@ const menuItems = [
       "https://careerfoundry.com/en/blog/ui-design/the-importance-of-consistency-in-ui-design/#:~:text=Consistency%20in%20UI%20design%20is,control%2C%20familiarity%2C%20and%20reliability",
       "https://www.interaction-design.org/literature/article/principle-of-consistency-and-standards-in-user-interface-design",
     ],
-    moduleWith: <Consistency />,
-    moduleWithOut: <ConsistencyNo />,
+    moduleWith: <Consistency status={true} />,
+    moduleWithOut: <Consistency status={false} />,
   },
   {
     id: 3,
@@ -69,8 +63,8 @@ const menuItems = [
       "https://www.zivtech.com/blog/ux-principles-constraints-discoverability-feedback-and-more",
       "https://www.uxmatters.com/mt/archives/2016/05/the-role-of-constraints-in-design-innovation.php",
     ],
-    moduleWith: <Constraint />,
-    moduleWithOut: <ConstraintNo />,
+    moduleWith: <Constraint status={true} />,
+    moduleWithOut: <Constraint status={false} />,
   },
   {
     id: 4,
@@ -85,8 +79,8 @@ const menuItems = [
       "https://medium.com/@sachinrekhi/don-normans-principles-of-interaction-design-51025a2c0f33#:~:text=Feedback,tactile%2C%20audio%2C%20and%20more.",
       "https://sbmi.uth.edu/nccd/ehrusability/design/guidelines/Principles/feedback.htm",
     ],
-    moduleWith: <Feedback />,
-    moduleWithOut: <FeedbackNo />,
+    moduleWith: <Feedback status={true} />,
+    moduleWithOut: <Feedback status={false} />,
   },
   {
     id: 5,
@@ -101,8 +95,8 @@ const menuItems = [
       "https://medium.com/@sachinrekhi/don-normans-principles-of-interaction-design-51025a2c0f33",
       "https://www.bresslergroup.com/blog/design-defined-how-should-mapping-determine-your-controls/",
     ],
-    moduleWith: <Mapping />,
-    moduleWithOut: <MappingNo />,
+    moduleWith: <Mapping status={true} />,
+    moduleWithOut: <Mapping status={false} />,
   },
   {
     id: 6,
@@ -117,8 +111,8 @@ const menuItems = [
       "https://givegoodux.com/visibility-5-principles-interaction-design-supercharge-ui-2-5/",
       "https://medium.com/nyc-design/1-visibility-of-system-status-with-examples-5e3bc9adfe7b",
     ],
-    moduleWith: <Visibility />,
-    moduleWithOut: <VisibilityNo />,
+    moduleWith: <Visibility status={true} />,
+    moduleWithOut: <Visibility status={false} />,
   },
 ];
 
