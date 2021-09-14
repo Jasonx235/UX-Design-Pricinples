@@ -24,8 +24,8 @@ function Menu() {
             ))}
           </select>
         </div>
-        <div className='d-none d-lg-block '>
-          <ul className='text-center'>
+        <div className='d-none d-lg-block'>
+          <ul className='text-center list'>
             {menuItems.map((option) => {
               return (
                 <li
@@ -34,7 +34,7 @@ function Menu() {
                     setSelectedID(option.id);
                   }}
                   key={option.id}
-                  className='menu'
+                  className={"menu " + (selected === option.name ? "selected" : "")}
                 >
                   {option.name}
                 </li>

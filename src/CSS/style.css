@@ -56,6 +56,32 @@ h1 {
 
 /*  <Menu/> Styles */
 
+.menu-container {
+  border: 5px solid goldenrod;
+  background-color: rgba(255, 255, 255, 90%);
+  margin-bottom: 10px;
+  border-radius: 100px;
+  width: 100%;
+  max-width: 855px;
+}
+
+/* List Styles */
+.list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 65px;
+  font-weight: 500;
+  margin-bottom: 0;
+  color: grey;
+}
+
+.selected{
+  font-weight: 700;
+  color: black;
+}
+/* Content Styles */
+
 .content-container {
   border: 5px solid red;
   width: 100%;
@@ -65,15 +91,6 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.menu-container {
-  border: 5px solid goldenrod;
-  background-color: rgba(255, 255, 255, 90%);
-  margin-bottom: 10px;
-
-  width: 100%;
-  max-width: 855px;
 }
 
 .information-container {
@@ -108,14 +125,17 @@ svg {
   border-radius: 5px;
 }
 
-.yes{
+.yes {
   background-color: green;
 }
 
-.no{
+.no {
   background-color: red;
 }
 
+.list li {
+  cursor: pointer;
+}
 @media (min-width: 954px) {
   svg {
     display: block;
