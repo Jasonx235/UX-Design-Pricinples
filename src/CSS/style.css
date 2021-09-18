@@ -57,8 +57,9 @@ h1 {
 /*  <Menu/> Styles */
 
 .menu-container {
-  border: 5px solid goldenrod;
+  /* border: 5px solid goldenrod; */
   background-color: rgba(255, 255, 255, 90%);
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
   margin-bottom: 10px;
   border-radius: 100px;
   width: 100%;
@@ -76,9 +77,13 @@ h1 {
   color: grey;
 }
 
-.selected{
+.selected {
   font-weight: 700;
+  padding: 10px;
   color: black;
+  border-radius: 100px;
+  background-color: rgba(0, 0, 0, 0.06);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 5px;
 }
 /* Content Styles */
 
@@ -105,8 +110,8 @@ h1 {
   border: 5px solid green;
 }
 
-.menu {
-  display: inline-block;
+.menu:hover {
+  color: black;
 }
 
 /* Setting SVG to background */
