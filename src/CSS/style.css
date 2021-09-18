@@ -58,12 +58,67 @@ h1 {
 
 .menu-container {
   /* border: 5px solid goldenrod; */
+  position: relative;
   background-color: rgba(255, 255, 255, 90%);
   box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
   margin-bottom: 10px;
   border-radius: 100px;
   width: 100%;
   max-width: 855px;
+}
+
+/* Drop Down */
+.drop-down {
+  position: absolute;
+  width: 100%;
+}
+.myControlClassName {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 855px;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 100%);
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
+}
+
+.is-open .myControlClassName {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.myPlaceholderClassName {
+  font-weight: 700;
+  color: black;
+}
+.myMenuClassName {
+  color: black;
+  padding: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgba(255, 255, 255, 100%);
+}
+
+.Dropdown-option {
+  font-weight: 500;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+  cursor: pointer;
+}
+
+.Dropdown-option:hover {
+  font-weight: 700;
+}
+
+.Dropdown-option:not(:last-child) {
+  border-bottom: 2px solid black;
 }
 
 /* List Styles */
@@ -99,6 +154,7 @@ h1 {
 }
 
 .information-container {
+  margin-top: 40px;
   border: 5px solid blue;
   background-color: rgba(255, 255, 255, 90%);
   overflow-wrap: break-word;
