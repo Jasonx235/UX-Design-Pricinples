@@ -12,24 +12,25 @@ function Information({ selected, selectedID }) {
     return (
       <div className='d-flex justify-content-center align-items-center flex-column h-100 w-100'>
         <div className='information-container '>
-          <p>
-            {data.name} {data.id}
-          </p>
-          <p>description</p>
+          <p className='name'>{data.name}</p>
           <p>{data.description}</p>
-          <p>Learn More</p>
-          <ul>
+          <hr />
+    
+          <p>
+            <b>Learn More:</b>
+          </p>
+          <ol>
             {data.links &&
-              data.links.map((link) => {
+              data.links.map((link, index) => {
                 return (
                   <li>
                     <a href={link} target='_blank' rel='noopener noreferrer'>
-                      {link}
+                      Source {index + 1}
                     </a>
                   </li>
                 );
               })}
-          </ul>
+          </ol>
         </div>
       </div>
     );
