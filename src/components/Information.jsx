@@ -15,11 +15,11 @@ function Information({ selected, selectedID }) {
           <p className='name'>{data.name}</p>
           <p>{data.description}</p>
           <hr />
-    
+
           <p>
             <b>Learn More:</b>
           </p>
-          <ol>
+          <ul>
             {data.links &&
               data.links.map((link, index) => {
                 return (
@@ -30,7 +30,7 @@ function Information({ selected, selectedID }) {
                   </li>
                 );
               })}
-          </ol>
+          </ul>
         </div>
       </div>
     );
@@ -39,23 +39,25 @@ function Information({ selected, selectedID }) {
   return (
     <div className='d-flex justify-content-center align-items-center flex-column h-100 w-100'>
       <div className='information-container '>
-        <p>
-          {data.name} {data.id}
-        </p>
+        <p className='name'>{data.name}</p>
         <div className='module-container d-flex justify-content-around flex-wrap'>
           {data.moduleWith}
           {data.moduleWithOut}
         </div>
-        <p>description</p>
+        <br />
         <p>{data.description}</p>
-        <p>Link</p>
+        <hr />
+
+        <p>
+          <b>Learn More:</b>
+        </p>
         <ul>
           {data.links &&
-            data.links.map((link) => {
+            data.links.map((link, index) => {
               return (
                 <li>
                   <a href={link} target='_blank' rel='noopener noreferrer'>
-                    {link}
+                    Source {index + 1}
                   </a>
                 </li>
               );
