@@ -194,7 +194,7 @@ h1 {
 }
 
 .module-container {
-  border: 5px solid green;
+  /* border: 5px solid green; */
 }
 
 .menu:hover {
@@ -223,9 +223,10 @@ svg {
 
 /* Module Styles */
 .module {
-  height: 275px;
-  width: 350px;
+  height: clamp(200px, 24vw, 275px);
+  width: clamp(250px, 30vw, 350px);
   border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .yes {
