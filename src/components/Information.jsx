@@ -23,7 +23,7 @@ function Information({ selected, selectedID }) {
             {data.links &&
               data.links.map((link, index) => {
                 return (
-                  <li>
+                  <li className='sources'>
                     <a href={link} target='_blank' rel='noopener noreferrer'>
                       Source {index + 1}
                     </a>
@@ -55,7 +55,7 @@ function Information({ selected, selectedID }) {
           {data.links &&
             data.links.map((link, index) => {
               return (
-                <li>
+                <li className='sources'>
                   <a href={link} target='_blank' rel='noopener noreferrer'>
                     Source {index + 1}
                   </a>
