@@ -60,7 +60,7 @@ h1 {
   /* border: 5px solid goldenrod; */
   position: relative;
   background-color: rgba(255, 255, 255, 90%);
-  box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
+  box-shadow: 0 4px 5px 0 hsla(0, 0%, 0%, 0.2);
   margin-bottom: 10px;
   border-radius: 100px;
   width: 100%;
@@ -109,7 +109,7 @@ h1 {
   max-width: 855px;
   border-radius: 100px;
   background-color: rgba(255, 255, 255, 100%);
-  box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
+  box-shadow: 0 4px 5px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 /* Style when open */
@@ -182,7 +182,7 @@ h1 {
   padding: 20px 35px;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 90%);
-  box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
+  box-shadow: 0 4px 5px 0 hsla(0, 0%, 0%, 0.2);
   overflow-wrap: break-word;
   width: 100%;
   max-width: 855px;
@@ -236,6 +236,15 @@ svg {
 .no {
   background-color: red;
 }
+
+/* Affordance */
+
+
+
+
+
+
+
 
 @media (min-width: 954px) {
   svg {
