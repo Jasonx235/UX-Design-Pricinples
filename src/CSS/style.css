@@ -54,6 +54,14 @@ h1 {
   margin-bottom: clamp(250px, 40%, 700px);
 }
 
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
 /*  <Menu/> Styles */
 
 .menu-container {
@@ -227,25 +235,72 @@ svg {
   width: clamp(250px, 30vw, 350px);
   border-radius: 5px;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
 .yes {
-  background-color: green;
+  background-color: white;
+  box-shadow: 0px 0px 2px green;
 }
 
 .no {
-  background-color: red;
+  background-color: white;
+  box-shadow: 0px 0px 2px red;
+}
+
+.title {
+  margin-top: 8%;
+  margin-bottom: 4%;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 /* Affordance */
+.affordance {
+  display: flex;
+  flex-direction: column;
+}
 
+.affordance p {
+  text-align: center;
+  font-weight: 700;
+}
 
+.affordance img {
+  height: 50px;
+  width: 50px;
+}
 
+.counterNo {
+  font-size: 25px;
+  margin-top: 25%;
+  margin-bottom: 15%;
+}
 
+.counterYes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-top: 10%;
+}
 
+#addsub {
+  font-size: 45px;
+  font-weight: 500;
+}
+.reset {
+  margin-left: 15px;
+  margin-top: 25%;
+  margin-bottom: 25%;
+}
 
-
-
+.left,
+.right {
+  flex: 1;
+}
 @media (min-width: 954px) {
   svg {
     display: block;
