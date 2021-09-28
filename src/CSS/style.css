@@ -249,6 +249,8 @@ svg {
 }
 
 .title {
+  text-align: center;
+  font-weight: 700;
   margin-top: 8%;
   margin-bottom: 4%;
 }
@@ -257,7 +259,13 @@ svg {
   cursor: pointer;
 }
 
-/* Affordance */
+.left,
+.right {
+  flex: 1;
+}
+
+/* Affordance ----------------------------------------------*/
+
 .affordance {
   display: flex;
   flex-direction: column;
@@ -297,10 +305,8 @@ svg {
   margin-bottom: 25%;
 }
 
-.left,
-.right {
-  flex: 1;
-}
+/* Consistency ----------------------------------------------*/
+
 @media (min-width: 954px) {
   svg {
     display: block;
