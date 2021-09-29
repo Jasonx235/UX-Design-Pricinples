@@ -1,21 +1,19 @@
 import React, { useState, useEffect } from "react";
 import menuItems from "../Data";
 
-function Information({ selected, selectedID }) {
+function Information({ selectedID }) {
   const [data, setData] = useState({});
 
   useEffect(() => {
     setData(menuItems[selectedID]);
   }, [selectedID]);
-
-  if (selected === "About") {
+  if (menuItems[selectedID].name === menuItems[0].name) {
     return (
       <div className='d-flex justify-content-center align-items-center flex-column h-100 w-100'>
         <div className='information-container '>
           <p className='name'>{data.name}</p>
           <p>{data.description}</p>
           <hr />
-
           <p>
             <b>Learn More:</b>
           </p>
@@ -23,7 +21,7 @@ function Information({ selected, selectedID }) {
             {data.links &&
               data.links.map((link, index) => {
                 return (
-                  <li className='sources'>
+                  <li className='sources' key={parseInt(index, 10)}>
                     <a href={link} target='_blank' rel='noopener noreferrer'>
                       Source {index + 1}
                     </a>
@@ -55,7 +53,7 @@ function Information({ selected, selectedID }) {
           {data.links &&
             data.links.map((link, index) => {
               return (
-                <li className='sources'>
+                <li className='sources' key={parseInt(index, 10)}>
                   <a href={link} target='_blank' rel='noopener noreferrer'>
                     Source {index + 1}
                   </a>

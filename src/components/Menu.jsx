@@ -3,29 +3,28 @@ import menuItems from "../Data";
 import Information from "./Information";
 import Dropdown from "react-dropdown";
 
-function Menu() {
-  const [selected, setSelected] = useState("About");
-  const [selectedID, setSelectedID] = useState(0);
+function Menu({ selected }) {
+  const [selectedID, setSelectedID] = useState(selected);
   const options = menuItems.map((option) => ({
     value: option,
-    key: option.id + 200,
     label: option.name,
   }));
-
   return (
     <div className='content-container'>
       <div className='menu-container'>
         <div className='d-lg-none'>
           <Dropdown
             onChange={(e) => {
-              console.log(e.label);
-              console.log(e.value.id);
-              setSelected(e.value.name);
               setSelectedID(e.value.id);
+              window.history.replaceState(
+                null,
+                null,
+                `/${e.value.name.toLowerCase()}`
+              );
             }}
             options={options}
             className='drop-down'
-            placeholder='About'
+            placeholder={options[selectedID].label}
             controlClassName='myControlClassName'
             placeholderClassName='myPlaceholderClassName'
             menuClassName='myMenuClassName'
@@ -40,12 +39,20 @@ function Menu() {
               return (
                 <li
                   onClick={() => {
-                    setSelected(option.name);
                     setSelectedID(option.id);
+                    window.history.replaceState(
+                      null,
+                      null,
+                      `/${option.name.toLowerCase()}`
+                    );
                   }}
-                  key={option.id + 100}
+                  tabIndex={parseInt(option.id, 10) + 1}
+                  key={parseInt(option.id, 10)}
                   className={
-                    "menu " + (selected === option.name ? "selected" : "")
+                    "menu " +
+                    (options[selectedID].label === option.name
+                      ? "selected"
+                      : "")
                   }
                 >
                   {option.name}
@@ -55,7 +62,7 @@ function Menu() {
           </ul>
         </div>
       </div>
-      <Information selected={selected} selectedID={selectedID} />
+      <Information selectedID={selectedID} />
     </div>
   );
 }
