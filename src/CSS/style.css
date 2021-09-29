@@ -51,7 +51,7 @@ h1 {
 
 .header-container {
   border: 5px solid goldenrod;
-  margin-bottom: clamp(250px, 40%, 700px);
+  margin-bottom: 240px;
 }
 
 .red {
@@ -255,7 +255,6 @@ svg {
   margin-bottom: 4%;
 }
 
-
 .pointer {
   cursor: pointer;
 }
@@ -312,8 +311,47 @@ svg {
   svg {
     display: block;
   }
-
+  
   #Sun {
     visibility: hidden;
+  }
+}
+
+
+/* Margin bottom Media Queries */
+
+@media (min-width: 500px) {
+  .header-container {
+    margin-bottom: 180px;
+  }
+}
+
+@media (min-width: 700px) {
+  .header-container {
+    margin-bottom: 130px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .header-container {
+    margin-bottom: 180px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-container {
+    margin-bottom: 18vw;
+  }
+}
+
+@media (min-width: 1600px) {
+  .header-container {
+    margin-bottom: 22vw;
+  }
+}
+
+@media (min-width: 1920px) {
+  .header-container {
+    margin-bottom: 450px;
   }
 }
