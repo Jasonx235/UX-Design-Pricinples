@@ -51,7 +51,7 @@ h1 {
 
 .header-container {
   border: 5px solid goldenrod;
-  margin-bottom: 240px;
+  margin-bottom: 180px;
 }
 
 .red {
@@ -311,20 +311,13 @@ svg {
   svg {
     display: block;
   }
-  
+
   #Sun {
     visibility: hidden;
   }
 }
 
-
 /* Margin bottom Media Queries */
-
-@media (min-width: 500px) {
-  .header-container {
-    margin-bottom: 180px;
-  }
-}
 
 @media (min-width: 700px) {
   .header-container {
