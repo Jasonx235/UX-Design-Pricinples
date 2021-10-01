@@ -316,6 +316,42 @@ svg {
   width: 50px;
 }
 
+.consistency-container {
+  margin-top: 20px;
+}
+
+.consistency-row {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.top {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.bot {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.hover1:hover {
+  box-shadow: 0px 0px 35px 10px rgba(0, 255, 51, 0.43);
+}
+
+.hover2:hover {
+  box-shadow: 0px 0px 35px 10px rgba(8, 0, 252, 0.43);
+}
+
+.hover3:hover {
+  box-shadow: 0px 0px 35px 10px rgba(252, 0, 122, 0.43);
+}
+
+.hover4:hover {
+  box-shadow: 0px 0px 35px 10px rgba(0, 255, 170, 0.43);
+}
+
 @media (min-width: 954px) {
   svg {
     display: block;

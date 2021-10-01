@@ -16,15 +16,19 @@ export default function Consistency({ status }) {
     return (
       <div className='module no consistency'>
         <p className='title'>WITHOUT CONSISTENCY</p>
-        <div>
-          <div>
-            <img src={profileNo} alt='profile icon w/o' />
-            <img src={settingsNo} alt='setting icon w/o' />
-            <img src={searchNo} alt='search icon w/o' />
+        <div className='consistency-container'>
+          <div className='consistency-row top'>
+            <img src={profileNo} alt='profile icon w/o' className='hover3' />
+            <img src={settingsNo} alt='setting icon w/o' className='hover2' />
+            <img src={searchNo} alt='search icon w/o' className='hover1' />
           </div>
-          <div>
-            <img src={shoppingBagNo} alt='shopping icon w/o' />
-            <img src={saveNo} alt='save icon w/o' />
+          <div className='consistency-row bot'>
+            <img
+              src={shoppingBagNo}
+              alt='shopping icon w/o'
+              className='hover3'
+            />
+            <img src={saveNo} alt='save icon w/o' className='hover2' />
           </div>
         </div>
       </div>
@@ -33,15 +37,19 @@ export default function Consistency({ status }) {
     return (
       <div className='module yes consistency'>
         <p className='title'>WITH CONSISTENCY</p>
-        <div>
-          <div>
-            <img src={profileYes} alt='profile icon w' />
-            <img src={settingsYes} alt='setting icon w' />
-            <img src={searchYes} alt='search icon w' />
+        <div className='consistency-container'>
+          <div className='consistency-row top'>
+            <img src={profileYes} alt='profile icon w' className='hover1' />
+            <img src={settingsYes} alt='setting icon w' className='hover1' />
+            <img src={searchYes} alt='search icon w' className='hover1' />
           </div>
-          <div>
-            <img src={shoppingBagYes} alt='shopping icon w' />
-            <img src={saveYes} alt='save icon w' />
+          <div className='consistency-row bot'>
+            <img
+              src={shoppingBagYes}
+              alt='shopping icon w'
+              className='hover1'
+            />
+            <img src={saveYes} alt='save icon w' className='hover1' />
           </div>
         </div>
       </div>
