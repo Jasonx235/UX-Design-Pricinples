@@ -308,6 +308,14 @@ svg {
 
 /* Consistency ----------------------------------------------*/
 
+.consistency {
+}
+
+.consistency img {
+  height: 50px;
+  width: 50px;
+}
+
 @media (min-width: 954px) {
   svg {
     display: block;
