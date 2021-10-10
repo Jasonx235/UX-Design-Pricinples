@@ -438,6 +438,43 @@ label {
   color: white;
 }
 
+/* Mapping ----------------------------------------------*/
+
+.mapping {
+}
+
+.bulbs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.switchesNo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switchesNo:first-of-type img {
+  margin: 15px 20px 5px 20px;
+}
+.switchesYes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.bulbs img {
+  width: 60px;
+  height: 60px;
+}
+
+.switches img {
+  height: 35px;
+}
+
 @media (min-width: 954px) {
   #background {
     display: block;

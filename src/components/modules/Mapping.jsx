@@ -7,30 +7,34 @@ import switchOn from "../../images/moduleAssets/mapping/light-on.png";
 export default function Mapping({ status }) {
   if (status) {
     return (
-      <div className='module no'>
+      <div className='module no mapping'>
         <p className='title'>WITHOUT MAPPING</p>
-        <div>
+        <div className='bulbs'>
           <img src={lightbulbOff} alt='lightbulb off' />
           <img src={lightbulbOff} alt='lightbulb off' />
           <img src={lightbulbOff} alt='lightbulb off' />
         </div>
         <div>
-          <img src={switchOff} alt='switch off' />
-          <img src={switchOff} alt='switch off' />
-          <img src={switchOff} alt='switch off' />
+          <div className='switches switchesNo'>
+            <img src={switchOff} alt='switch off' />
+            <img src={switchOff} alt='switch off' />
+          </div>
+          <div className='switches switchesNo'>
+            <img src={switchOff} alt='switch off' />
+          </div>
         </div>
       </div>
     );
   } else {
     return (
-      <div className='module yes'>
+      <div className='module yes mapping'>
         <p className='title'>WITH MAPPING</p>
-        <div>
+        <div className='bulbs'>
           <img src={lightbulbOn} alt='lightbulb on' />
           <img src={lightbulbOn} alt='lightbulb on' />
           <img src={lightbulbOn} alt='lightbulb on ' />
         </div>
-        <div>
+        <div className='switches switchesYes'>
           <img src={switchOn} alt='switch on' />
           <img src={switchOn} alt='switch on' />
           <img src={switchOn} alt='switch on' />
