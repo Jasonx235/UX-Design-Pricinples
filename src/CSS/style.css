@@ -422,7 +422,7 @@ label {
 
 .close-button {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .close-button button {
@@ -457,7 +457,7 @@ label {
 }
 
 .switchesNo:first-of-type img {
-  margin: 15px 20px 5px 20px;
+  margin: 15px 20px 0px 20px;
 }
 .switchesYes {
   display: flex;
@@ -473,6 +473,9 @@ label {
 
 .switches img {
   height: 35px;
+  margin-left: 15px;
+  margin-right: 15px;
+  cursor: pointer;
 }
 
 @media (min-width: 954px) {
