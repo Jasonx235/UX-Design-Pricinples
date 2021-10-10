@@ -8,7 +8,7 @@ export default function Constraint({ status }) {
 
   const handleSubmitNo = () => {
     setLoading(true);
-    setTimeout(() => setLoading(false), 1000);
+    setTimeout(() => setLoading(false), 500);
     setSubmitted(true);
   };
 
@@ -27,18 +27,27 @@ export default function Constraint({ status }) {
     return (
       <div className='module no constraint'>
         {loading ? (
-          <ReactLoading type='spin' color='blue' />
+          <div className='center'>
+            <ReactLoading type='spin' color='#043752' />
+          </div>
         ) : submitted ? (
-          <div>
-            Hi {myData ? myData : "unknown"}, how are you?
-            <button
-              onClick={() => {
-                setSubmitted(false);
-                setMyData("");
-              }}
-            >
-              X
-            </button>
+          <div className='constraint-submit'>
+            <div className='close-button'>
+              <button
+                onClick={() => {
+                  setSubmitted(false);
+                  setMyData("");
+                }}
+              >
+                X
+              </button>
+            </div>
+            <div className='center'>
+              <p className='hello'>
+                Hi <b>{myData ? myData : "unknown"}</b>, how are you?
+              </p>
+              {!myData && <p className='red'>Error: name is not found</p>}
+            </div>
           </div>
         ) : (
           <div>
@@ -51,13 +60,12 @@ export default function Constraint({ status }) {
                 value={myData}
                 onChange={(e) => {
                   setMyData(e.target.value);
-                  console.log(myData);
                 }}
               />
               <input
                 type='submit'
                 name='submit'
-                id='submit'
+                className='submit submitExtra'
                 onClick={() => handleSubmitNo()}
               />
             </div>
@@ -69,18 +77,26 @@ export default function Constraint({ status }) {
     return (
       <div className='module yes constraint'>
         {loading ? (
-          <ReactLoading type='spin' color='blue' />
+          <div className='center'>
+            <ReactLoading type='spin' color='#043752' />
+          </div>
         ) : submitted ? (
-          <div>
-            Hi {myData}, how are you?
-            <button
-              onClick={() => {
-                setSubmitted(false);
-                setMyData("");
-              }}
-            >
-              X
-            </button>
+          <div className='constraint-submit'>
+            <div className='close-button'>
+              <button
+                onClick={() => {
+                  setSubmitted(false);
+                  setMyData("");
+                }}
+              >
+                X
+              </button>
+            </div>
+            <div className='center'>
+              <p className='hello'>
+                Hi <b>{myData}</b>, how are you?
+              </p>
+            </div>
           </div>
         ) : (
           <div>
@@ -93,14 +109,14 @@ export default function Constraint({ status }) {
                 value={myData}
                 onChange={(e) => {
                   setMyData(e.target.value);
-                  console.log(myData);
                 }}
               />
               <input
                 type='submit'
                 name='submit'
-                id='submit'
+                className={"submit " + (myData ? "submitExtra" : "")}
                 onClick={() => handleSubmit()}
+                disabled={myData ? false : true}
               />
             </div>
           </div>
