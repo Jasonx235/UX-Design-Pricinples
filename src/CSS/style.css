@@ -44,6 +44,15 @@ h1 {
   margin-left: 10px;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
 .name {
   font-size: clamp(12px, 5vw, 24px);
   font-weight: bold;
@@ -374,15 +383,6 @@ label {
   padding: 5px;
 }
 
-.constraint .center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-}
-
 .constraint .submit {
   display: block;
   margin-top: 15px;
@@ -442,6 +442,30 @@ label {
 
 /* Feedback ----------------------------------------------*/
 
+.feedback input {
+  background-color: #43b856;
+  padding: 10px 60px;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.feedbackNo {
+  cursor: default !important;
+}
+
+.feedbackYes:hover {
+  background-color: black;
+  color: white;
+}
+
+.feedback .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
 /* Mapping ----------------------------------------------*/
 
 /* .mapping {
