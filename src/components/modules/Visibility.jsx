@@ -1,22 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Visibility({ status }) {
+  const [submitted, setSubmitted] = useState(false);
   if (status) {
     return (
-      <div className='module no'>
+      <div className='module no visibility'>
         <p className='title'>WITHOUT VISIBILITY</p>
-        <p>Welcome!</p>
+        <p className='welcome'>Welcome!</p>
         <p>All items 50% Off</p>
-        <p>Click here to Enter</p>
+        <p className='click-to-enter'>Click here to Enter</p>
       </div>
     );
   } else {
     return (
-      <div className='module yes'>
+      <div className='module yes visibility'>
         <p className='title'>WITH VISIBILITY</p>
-        <p>Welcome!</p>
-        <p>All items 50% Off</p>
-        <button type='submit'>Enter -></button>
+        <p className='welcome font-weight-bold'>Welcome!</p>
+        <p>
+          All items <b>50%</b> Off
+        </p>
+        <button type='submit' className='enter'>
+          Enter ->
+        </button>
       </div>
     );
   }

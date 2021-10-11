@@ -7,6 +7,7 @@ html {
   width: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  /* word-break: break-word; */
 }
 
 *,
@@ -50,8 +51,8 @@ h1 {
 }
 
 .header-container {
-  border: 5px solid goldenrod;
-  margin-bottom: 180px;
+  /* border: 5px solid goldenrod; */
+  margin-bottom: 190px;
 }
 
 .red {
@@ -70,7 +71,6 @@ h1 {
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(13.5px);
   -webkit-backdrop-filter: blur(13.5px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 4px 5px 0 hsla(0, 0%, 0%, 0.2);
   margin-bottom: 10px;
   border-radius: 100px;
@@ -171,7 +171,7 @@ h1 {
 /* Content Styles */
 
 .content-container {
-  border: 5px solid red;
+  /* border: 5px solid red; */
   width: 100%;
   height: 100%;
   padding-bottom: 8rem;
@@ -229,7 +229,7 @@ h1 {
 }
 
 /* Setting SVG to background */
-#background {
+.background {
   position: absolute;
   display: none;
   top: 0;
@@ -418,6 +418,8 @@ label {
 
 .hello {
   font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .close-button {
@@ -437,6 +439,8 @@ label {
   background-color: black;
   color: white;
 }
+
+/* Feedback ----------------------------------------------*/
 
 /* Mapping ----------------------------------------------*/
 
@@ -478,8 +482,40 @@ label {
   cursor: pointer;
 }
 
+/* Visibility ----------------------------------------------*/
+
+.visibility {
+  text-align: center;
+}
+
+.visibility p {
+  margin-bottom: 0px;
+}
+
+.welcome {
+  margin-top: 25px;
+  font-size: 35px;
+}
+
+.click-to-enter {
+  cursor: pointer;
+}
+
+.enter {
+  margin-top: 10px;
+  background-color: rgba(177, 20, 233, 0.4);
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+.enter:hover {
+  background-color: black;
+  color: white;
+}
+
 @media (min-width: 954px) {
-  #background {
+  .background {
     display: block;
   }
 
@@ -498,7 +534,7 @@ label {
 
 @media (min-width: 1100px) {
   .header-container {
-    margin-bottom: 180px;
+    margin-bottom: 190px;
   }
 }
 
