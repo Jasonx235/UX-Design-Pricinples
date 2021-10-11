@@ -7,7 +7,7 @@ html {
   width: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  /* word-break: break-word; */
+  word-break: break-word;
 }
 
 *,

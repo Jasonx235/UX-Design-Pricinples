@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 export default function Visibility({ status }) {
-  const [submitted, setSubmitted] = useState(false);
   if (status) {
     return (
       <div className='module no visibility'>
@@ -20,7 +19,7 @@ export default function Visibility({ status }) {
           All items <b>50%</b> Off
         </p>
         <button type='submit' className='enter'>
-          Enter {'->'}
+          Enter {"->"}
         </button>
       </div>
     );
