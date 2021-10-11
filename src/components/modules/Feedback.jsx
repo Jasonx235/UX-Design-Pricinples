@@ -19,7 +19,6 @@ export default function Feedback({ status }) {
       <div className='module no feedback'>
         {submitted ? (
           <div>
-            hi
             <div className='close-button'>
               <button
                 onClick={() => {
@@ -29,6 +28,16 @@ export default function Feedback({ status }) {
                 X
               </button>
             </div>
+            <div className='center'>
+              <iframe
+                src='https://giphy.com/embed/AcfTF7tyikWyroP0x7'
+                width='240'
+                height='135'
+                frameBorder='0'
+                class='giphy-embed'
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         ) : (
           <div className='feedback-container'>
@@ -36,7 +45,7 @@ export default function Feedback({ status }) {
             <div className='button-container'>
               <input
                 type='submit'
-                value='OK'
+                value='Click Me'
                 className='feedbackNo'
                 onClick={() => {
                   handleSubmitNo();
@@ -56,7 +65,6 @@ export default function Feedback({ status }) {
           </div>
         ) : submitted ? (
           <div>
-            hi
             <div className='close-button'>
               <button
                 onClick={() => {
@@ -66,6 +74,16 @@ export default function Feedback({ status }) {
                 X
               </button>
             </div>
+            <div className='center'>
+              <iframe
+                src='https://giphy.com/embed/AcfTF7tyikWyroP0x7'
+                width='240'
+                height='135'
+                frameBorder='0'
+                class='giphy-embed'
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         ) : (
           <div className='feedback-container'>
@@ -73,7 +91,7 @@ export default function Feedback({ status }) {
             <div className='button-container'>
               <input
                 type='submit'
-                value='OK'
+                value='Click Me'
                 className='feedbackYes'
                 onClick={() => {
                   handleSubmitYes();

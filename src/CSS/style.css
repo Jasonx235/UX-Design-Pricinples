@@ -444,11 +444,17 @@ label {
 
 .feedback input {
   background-color: #43b856;
-  padding: 10px 60px;
+  padding: 10px 40px;
   border-radius: 30px;
   border: none;
   font-weight: bold;
   font-size: 25px;
+}
+
+.giphy-embed {
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .feedbackNo {
@@ -464,7 +470,7 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 55px;
 }
 /* Mapping ----------------------------------------------*/
 
