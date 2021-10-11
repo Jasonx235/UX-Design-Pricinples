@@ -31,6 +31,7 @@ export default function Feedback({ status }) {
             <div className='center'>
               <iframe
                 src='https://giphy.com/embed/AcfTF7tyikWyroP0x7'
+                title='Grogu Gif w/o Feedback'
                 width='240'
                 height='135'
                 frameBorder='0'
@@ -77,6 +78,7 @@ export default function Feedback({ status }) {
             <div className='center'>
               <iframe
                 src='https://giphy.com/embed/AcfTF7tyikWyroP0x7'
+                title='Grogu Gif w/ Feedback'
                 width='240'
                 height='135'
                 frameBorder='0'
