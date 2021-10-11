@@ -20,7 +20,7 @@ export default function Visibility({ status }) {
           All items <b>50%</b> Off
         </p>
         <button type='submit' className='enter'>
-          Enter ->
+          Enter {'->'}
         </button>
       </div>
     );

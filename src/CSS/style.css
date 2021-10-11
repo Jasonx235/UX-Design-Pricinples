@@ -208,9 +208,9 @@ h1 {
   font-weight: 700;
 }
 
-.module-container {
-  /* border: 5px solid green; */
-}
+/* .module-container {
+  border: 5px solid green;
+} */
 
 .menu:hover {
   color: black;
@@ -315,8 +315,8 @@ h1 {
 
 /* Consistency ----------------------------------------------*/
 
-.consistency {
-}
+/* .consistency {
+} */
 
 .consistency img {
   height: 50px;
@@ -444,8 +444,8 @@ label {
 
 /* Mapping ----------------------------------------------*/
 
-.mapping {
-}
+/* .mapping {
+} */
 
 .bulbs {
   display: flex;
