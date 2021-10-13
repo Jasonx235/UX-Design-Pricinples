@@ -23,7 +23,7 @@ function Information({ selectedID }) {
                 return (
                   <li className='sources' key={parseInt(index, 10)}>
                     <a href={link} target='_blank' rel='noopener noreferrer'>
-                      Source {index + 1}
+                      Source
                     </a>
                   </li>
                 );
@@ -55,7 +55,7 @@ function Information({ selectedID }) {
               return (
                 <li className='sources' key={parseInt(index, 10)}>
                   <a href={link} target='_blank' rel='noopener noreferrer'>
-                    Source {index + 1}
+                    Source
                   </a>
                 </li>
               );
