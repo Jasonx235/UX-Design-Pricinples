@@ -50,7 +50,7 @@ export default function Affordance({ status }) {
           <div className='d-flex'>
             <p
               id='addsub'
-              className='pointer counterYes left red'
+              className='pointer counterYes left red noSelect'
               onClick={() => {
                 setCounter(counter - 1);
               }}
@@ -60,7 +60,7 @@ export default function Affordance({ status }) {
             <p className='counterYes'>{counter}</p>
             <p
               id='addsub'
-              className='pointer counterYes right green'
+              className='pointer counterYes right green noSelect'
               onClick={() => {
                 setCounter(counter + 1);
               }}

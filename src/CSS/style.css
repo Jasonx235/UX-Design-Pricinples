@@ -72,6 +72,10 @@ h1 {
   color: green;
 }
 
+.noSelect{
+  user-select:none;
+}
+
 /*  <Menu/> Styles */
 
 .menu-container {
@@ -452,7 +456,6 @@ label {
 }
 
 .giphy-embed {
-  margin-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
 }
