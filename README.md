@@ -1,6 +1,6 @@
 # Verrazano Capstone Project
 
-{https://uxdesigncapstone.netlify.app/}
+https://uxdesigncapstone.netlify.app/
 
 ## Design Created with Figma
 
