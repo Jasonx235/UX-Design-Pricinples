@@ -22,7 +22,7 @@ const menuItems = [
     id: 1,
     name: "Affordance",
     description:
-      "Affordance is the principle that allows users to instinctively know what actions can be taken. You should be able to intuitively act without having to think about it. The most basic example of this principle is doors, when you see a door with a handle you instinctively try to pull the door, and when there is a flat surface you think to push. ",
+      "Affordance is the principle that allows users to know what actions can be taken instinctively. One should be able to act without having to think about it intuitively. The most basic example of this principle is doors, when one sees a door with a handle they instinctively try to pull the door, and when there is a flat surface, one thinks to push.",
     withDescription:
       "The module without affordance provides a semi confusing increment and decrement feature that requires a bit of thought to understand its behavior",
     withoutDescription:
@@ -38,7 +38,7 @@ const menuItems = [
     id: 2,
     name: "Consistency",
     description:
-      "Consistency is the principle that is concerned with the overall uniformity of the aesthetics and functionality of a certain product/service. Having a consistent look and feel across your service/brand allows the user to have a sense of familiarity and reliability. Google has a consistent theme throughout all of its products and services.",
+      "Consistency is the principle concerned with the overall uniformity of the aesthetics and functionality of a particular product/service. Having a consistent look and feel across a service/brand allows the user to have a sense of familiarity and reliability. Google has a consistent theme throughout all of its products and services.",
     withDescription:
       "The module without consistency displays a series of icons in various styles, it looks disorganized and does not feel right",
     withoutDescription:
@@ -54,7 +54,7 @@ const menuItems = [
     id: 3,
     name: "Constraint",
     description:
-      "Constraint is the principle that restricts users from performing certain actions. All actions should not be available to the user at all times because they will always do things that weren’t intended, by limiting options for the users you can protect them from unintended errors.",
+      "Constraint is the principle that restricts users from performing certain actions. All actions should not be available to the user at all times because they will always do things that were not intended. By limiting options for the users, it can protect them from unintended errors.",
     withDescription:
       "The module without constraint allows the user to submit an empty name which will result in an error",
     withoutDescription:
@@ -70,7 +70,7 @@ const menuItems = [
     id: 4,
     name: "Feedback",
     description:
-      "Feedback is the principle that notifies the user that an action has been acknowledged and what the next steps are. There are many forms of feedback: visual, audio, tactile, etc. Each is used depending on the context in which they are needed. Let's say you are completing a purchase and press the confirm button, you want some feedback in the manner of a message to confirm that your order was placed.",
+      "Feedback is the principle that notifies the user that an action has been acknowledged and the next steps. There are many forms of feedback: visual, audio, tactile, etc. Each is used depending on the context in which they are needed. If a user is completing a purchase and presses the confirm button, a user will expect some feedback in the manner of a message to confirm that an order was placed.",
     withDescription:
       "The module without feedback allows you to click a button and wait for an unknown outcome without certainty of the click or the following outcome",
     withoutDescription:
@@ -86,7 +86,7 @@ const menuItems = [
     id: 5,
     name: "Mapping",
     description:
-      "Mapping is the principle that refers to the relationship between the actions you perform on a controller and the expected reaction. A well-designed product/service will not need labels to indicate the functionality because the mapping was clear.  An example of unclear mapping is the stove in your kitchen, there are four burners played out in a square pattern and four knobs in a row. Without having labels on each knob it would be difficult to discern which knob turns on which burner.",
+      "Mapping is the principle that refers to the relationship between the actions performed on a controller and the expected reaction. A well-designed product/service will not need labels to indicate its functionality because the mapping was clear. An example of unclear mapping is the stove in a kitchen; there are four burners played out in a square pattern and four knobs in a row. Without having labels on each knob, it would be difficult to discern which knob turns on which burner.",
     withDescription:
       "The module without mapping shows three symbols that allow the user to turn on the lightbulbs except it isn't immediately apparent which button correlates to which lightbulb",
     withoutDescription:
@@ -102,7 +102,7 @@ const menuItems = [
     id: 6,
     name: "Visibility",
     description:
-      "Visibility is the principle that keeps the user visibly aware that there is information or action present. Having a good balance of visual cues throughout your product/service allows the user to quickly navigate and experience it in the most effective way possible. Examples of visual aids would be large call-to-action buttons on home pages that allow you to view important content.",
+      "Visibility is the principle that keeps the user visibly aware that there is information or action present. Having a good balance of visual cues throughout a product/service allows the user to quickly navigate and experience it in the most effective way possible. Examples of visual aids would be large call-to-action buttons on home pages that allow a user to view important content.",
     withDescription:
       "The module without visibility has a basic page with a welcome sign and a slightly hidden call to action link that will take the user to the desired location, however, it is not immediately apparent where the button is",
     withoutDescription:
