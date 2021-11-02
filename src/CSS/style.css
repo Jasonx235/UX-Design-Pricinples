@@ -76,6 +76,23 @@ h1 {
   user-select: none;
 }
 
+.animate-button {
+  border: none;
+  opacity: 50%;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 100%);
+  box-shadow: 0 4px 5px 0 hsla(0, 0%, 0%, 0.2);
+  display: block;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.animate-button:hover {
+  opacity: 100%;
+}
+
 /*  <Menu/> Styles */
 
 .menu-container {
@@ -548,64 +565,86 @@ label {
 }
 
 /* Animations */
-#Ship {
-  animation: leftToRight 70s infinite linear;
-}
-
 #Sun {
   opacity: 0.5;
+}
+
+.animations #InitialShip {
+  visibility: hidden;
+  animation: initialShip 70s linear;
+  animation-iteration-count: 1;
+}
+
+.animations #Ship {
+  visibility: hidden;
+  animation: leftToRight 70s infinite 70s linear;
+}
+
+.animations #Sun {
   animation: sun 5s infinite linear;
 }
 
-#Cloud1 {
+.animations #Cloud1 {
   animation: cloud1 30s infinite ease-in-out;
 }
 
-#Cloud2 {
+.animations#Cloud2 {
   animation: cloud2 30s infinite ease-in-out;
 }
 
-#Cloud3 {
+.animations #Cloud3 {
   animation: cloud1 45s infinite linear;
 }
 
-#Bubble1 {
+.animations #Bubble1 {
   animation: upAndDown 20s infinite linear;
 }
 
-#Bubble2 {
+.animations #Bubble2 {
   animation: upAndDown 20s infinite linear;
 }
 
-#Bubble1_1_ {
+.animations #Bubble1_1_ {
   animation: DownAndUp 5s infinite ease-in-out;
 }
 
-#fish1 {
+.animations #fish1 {
   animation: fish1 62s infinite ease-in-out;
 }
 
-#fish2 {
+.animations #fish2 {
   animation: fish2 46s infinite ease-in-out;
 }
 
-#fish3 {
+.animations #fish3 {
   animation: fish2 50s infinite ease-in-out;
 }
 
-#fish4 {
+.animations #fish4 {
   animation: fish2 70s infinite ease-in-out;
 }
 
-#fish5 {
+.animations #fish5 {
   animation: fish1 63s infinite ease-in-out;
+}
+
+@keyframes initialShip {
+  from {
+    visibility: visible;
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(70%);
+  }
 }
 
 @keyframes leftToRight {
   from {
+    visibility: visible;
     transform: translateX(-55%);
   }
   to {
+    visibility: visible;
     transform: translateX(70%);
   }
 }

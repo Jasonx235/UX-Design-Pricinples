@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ReactComponent as Background } from "./images/illustration.svg";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
@@ -9,14 +9,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./CSS/style.css";
 
 function App() {
+  const [animate, setAnimate] = useState(true);
   return (
     <>
       <Router>
-        <div className='animations'>
+        <div className={animate ? "animations" : ""}>
           <Background />
         </div>
         <div className='container'>
-          <Header />
+          <Header animate={animate} setAnimate={setAnimate} />
           <Switch>
             {menuItems.map((item, index) => {
               return (
