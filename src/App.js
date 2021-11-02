@@ -12,7 +12,9 @@ function App() {
   return (
     <>
       <Router>
-        <Background />
+        <div className='animations'>
+          <Background />
+        </div>
         <div className='container'>
           <Header />
           <Switch>

@@ -72,8 +72,8 @@ h1 {
   color: green;
 }
 
-.noSelect{
-  user-select:none;
+.noSelect {
+  user-select: none;
 }
 
 /*  <Menu/> Styles */
@@ -547,13 +547,150 @@ label {
   color: white;
 }
 
+/* Animations */
+#Ship {
+  animation: leftToRight 70s infinite linear;
+}
+
+#Sun {
+  opacity: 0.5;
+  animation: sun 5s infinite linear;
+}
+
+#Cloud1 {
+  animation: cloud1 30s infinite ease-in-out;
+}
+
+#Cloud2 {
+  animation: cloud2 30s infinite ease-in-out;
+}
+
+#Cloud3 {
+  animation: cloud1 45s infinite linear;
+}
+
+#Bubble1 {
+  animation: upAndDown 20s infinite linear;
+}
+
+#Bubble2 {
+  animation: upAndDown 20s infinite linear;
+}
+
+#Bubble1_1_ {
+  animation: DownAndUp 5s infinite ease-in-out;
+}
+
+#fish1 {
+  animation: fish1 62s infinite ease-in-out;
+}
+
+#fish2 {
+  animation: fish2 46s infinite ease-in-out;
+}
+
+#fish3 {
+  animation: fish2 50s infinite ease-in-out;
+}
+
+#fish4 {
+  animation: fish2 70s infinite ease-in-out;
+}
+
+#fish5 {
+  animation: fish1 63s infinite ease-in-out;
+}
+
+@keyframes leftToRight {
+  from {
+    transform: translateX(-55%);
+  }
+  to {
+    transform: translateX(70%);
+  }
+}
+
+@keyframes sun {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes cloud1 {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes cloud2 {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes DownAndUp {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(1%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fish1 {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}
+
+@keyframes fish2 {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
 @media (min-width: 954px) {
   .background {
     display: block;
-  }
-
-  #Sun {
-    visibility: hidden;
   }
 }
 
