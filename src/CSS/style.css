@@ -77,6 +77,7 @@ h1 {
 }
 
 .animate-button {
+  visibility: hidden;
   border: none;
   opacity: 0.5;
   background-color: rgba(255, 255, 255, 100%);
@@ -729,6 +730,10 @@ label {
 @media (min-width: 954px) {
   .background {
     display: block;
+  }
+
+  .animate-button {
+    visibility: visible;
   }
 }
 
