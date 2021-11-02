@@ -79,7 +79,6 @@ h1 {
 .animate-button {
   border: none;
   opacity: 50%;
-  border-radius: 100px;
   background-color: rgba(255, 255, 255, 100%);
   box-shadow: 0 4px 5px 0 hsla(0, 0%, 0%, 0.2);
   display: block;
