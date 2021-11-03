@@ -16,6 +16,11 @@ function Menu({ selected }) {
           <Dropdown
             onChange={(e) => {
               setSelectedID(e.value.id);
+              window.history.pushState(
+                null,
+                null,
+                `/${e.value.name.toLowerCase()}`
+              );
               window.history.replaceState(
                 null,
                 null,
