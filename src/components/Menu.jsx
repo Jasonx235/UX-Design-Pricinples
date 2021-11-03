@@ -40,6 +40,11 @@ function Menu({ selected }) {
                 <li
                   onClick={() => {
                     setSelectedID(option.id);
+                    window.history.pushState(
+                      null,
+                      null,
+                      `/${option.name.toLowerCase()}`
+                    );
                     window.history.replaceState(
                       null,
                       null,
